@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&family=Ubuntu&family=Varela&display=swap');
+/* font-family: 'Baloo Bhai 2', cursive; */
+/* font-family: 'Ubuntu', sans-serif; */
+/* font-family: 'Varela', sans-serif; */
+
+body {
+    background-color: antiquewhite;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+nav {
+    font-family: 'Baloo Bhai 2', cursive;
+}
+
+nav ul {
+    color: white;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    list-style: none;
+    height: 8.5vh;
+
+}
+
+.logo img {
+    width: 40px;
+    padding-right: 10px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 1.4rem;
+    font-weight: bold;
+
+}
+
+nav ul li {
+    padding: 0px 15px;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+nav ul li:nth-child(n+2):hover {
+    color: palevioletred;
+}
+
+/* .container::before{
+    background: url(background2.jpg) no-repeat center center/cover;
+    position: absolute;
+    content: "";
+    height: 89.9vh;
+    width: 100vw;
+    z-index: -1;
+    top: 0;
+    left: 0;
+} */
+.container {
+    background: url(background2.jpg) no-repeat center center/cover;
+    min-height: 69.9vh;
+    font-family: 'Varela', sans-serif;
+    color: white;
+    padding: 20px;
+
+}
+
+.songContainer {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.songitems {
+    color: black;
+    margin: 15px 0px;
+    border-radius: 35px;
+    background-color: white;
+    height: 8vh;
+    width: 35vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.songitems img {
+    border-radius: 40px;
+    width: 50px;
+    height: 50px;
+}
+
+.songitems span i {
+    cursor: pointer;
+}
+
+.bottom {
+    position: sticky;
+    bottom: 0px;
+    background-color: black;
+    color: white;
+    height: 110px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#progressBar {
+    width: 70vw;
+    cursor: pointer;
+}
+
+.icons {
+    padding-top: 10px;
+    display: flex;
+}
+
+.icons div {
+    padding: 0px 10px;
+    cursor: pointer;
+}
+
+.info {
+    position: absolute;
+    top: 8vh;
+    left: 13vw;
+    font-family: 'Varela', sans-serif;
+    display: flex;
+    align-items: center;
+}
+
+#gif {
+    opacity: 0;
+    width: 80px;
+    height: 30px;
+    transition: opacity 0.2s ease-in;
+}
+
+@media screen and (max-width: 800px) {
+    .songitems {
+        width: 90vw;
+    }
+
+    .bottom {
+        height: 120px;
+    }
+
+    #progressBar{
+        position: absolute;
+        top: 7vh;
+    }
+
+    .icons{
+        position: absolute;
+        top: 9vh;
+    }
+
+    .info {
+
+        top: 2vh;
+    }
+}
